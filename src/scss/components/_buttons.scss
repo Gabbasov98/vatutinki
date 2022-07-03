@@ -1,0 +1,43 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.arrow-btn {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    white-space: nowrap;
+    svg {
+        margin-left: 10px;
+    }
+    &:hover {
+        color: $white;
+        path {
+            fill: $white;
+        }
+    }
+}
+
+.mbtn-white {
+    background-color: $white;
+    color: $dark;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+    .arrow-btn {
+        font-size: 18px;
+    }
+}

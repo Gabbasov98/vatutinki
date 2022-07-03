@@ -1,0 +1,122 @@
+@import "../vars.scss";
+.med {
+    padding-bottom: 90px;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        flex-grow: 1;
+    }
+    &__right {
+        width: 42.8%;
+        margin-left: 6%;
+        flex-shrink: 0;
+    }
+    &__img {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__desc {
+        width: 470px;
+        max-width: 100%;
+        margin: 58px 0 0 auto;
+        font-size: 22px;
+        line-height: 125%;
+    }
+}
+
+.massage {
+    padding: 60px 0;
+    position: relative;
+    &__img {
+        width: 100%;
+        display: block;
+    }
+    &__content {
+        position: absolute;
+        bottom: 128px;
+        left: 0;
+        width: 100%;
+    }
+    &__info {
+        width: 970px;
+        max-width: 100%;
+        padding: 32px 70px;
+        background-color: $dark;
+        margin-left: auto;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 125%;
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 120%;
+        margin-top: 18px;
+    }
+}
+
+.rf-lift {
+    padding-top: 60px;
+    .offer-card {
+        &__img {
+            @media screen and (min-width: 992px) {
+                width: 234px;
+                margin-right: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .med {
+        padding-bottom: 30px;
+        &__inner {
+            display: block;
+        }
+        &__right {
+            width: 100%;
+            max-width: 500px;
+            margin: 40px 0 0;
+        }
+        &__desc {
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+    .massage {
+        padding: 30px 0;
+        &__content {
+            bottom: 45px;
+        }
+        &__info {
+            padding: 24px 32px;
+        }
+        &__title {
+            font-size: 22px;
+        }
+        &__desc {
+            font-size: 16px;
+        }
+    }
+    .rf-lift {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .massage {
+        &__content {
+            position: static;
+        }
+        &__info {
+            padding: 0;
+        }
+        &__img {
+            margin-top: 30px;
+        }
+    }
+}

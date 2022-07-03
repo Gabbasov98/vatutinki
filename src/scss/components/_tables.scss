@@ -1,0 +1,85 @@
+@import "../vars.scss";
+.table-wrap {
+    border: 4px solid $white;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+table {
+    min-width: 100%;
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+    tr {
+        &:nth-child(even) {
+            background-color: $white;
+            color: $dark;
+        }
+    }
+    td {
+        border: none;
+        height: 80px;
+        overflow: hidden;
+        padding: 14px 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.price-table {
+    table {}
+    td {
+        &:nth-child(2),
+        &:nth-child(3) {
+            white-space: nowrap;
+        }
+        &:nth-child(3) {
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    table {
+        td {
+            font-size: 16px;
+            padding: 8px 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .table-wrap {
+        overflow: unset;
+    }
+    .price-table {
+        border: none;
+        table {
+            display: block;
+        }
+        tbody {
+            display: block;
+        }
+        tr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 2px solid $white;
+            border-radius: 10px;
+            padding: 10px 15px;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        td {
+            display: block;
+            height: unset;
+            padding: 0;
+            &:nth-child(1) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

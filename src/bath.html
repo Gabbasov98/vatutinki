@@ -1,0 +1,175 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='bath'>
+                <div class='container'>
+                    <div class='bath__inner'>
+                        <div class="bath__left">
+                            <h1 class="bath__title display2">БАННАЯ усадьба “ивушка”</h1>
+                            <div class="bath__desc">
+                                <p>Тут текст про банный комплекс, примерно на 3 строчки. Эта третья.</p>
+                            </div>
+                            <div class="bath__list">
+                                <p>Тут надо не забыть что есть:</p>
+                                <ul>
+                                    <li>Баня</li>
+                                    <li>Бассейн</li>
+                                    <li>Веранда</li>
+                                    <li>Шашлычная площадка</li>
+                                    <li>Каминный зал</li>
+                                </ul>
+                            </div>
+                            <div class="bath__advantages advantages">
+                                <div class="advantages__item">
+                                    <img src="img/advantage.webp" alt="">
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="img/advantage2.webp" alt="">
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="img/advantage3.webp" alt="">
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="img/advantage4.webp" alt="">
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="img/advantage5.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bath__right">
+                            <div class="bath__img">
+                                <img src="img/bath2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='prices'>
+                <div class='container'>
+                    <div class="prices__title display2">Цены</div>
+                    <div class='prices__table table-wrap price-table'>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Группа до 10 человек. Русская баня с бассейном.</td>
+                                    <td>сеанс (4 часа)</td>
+                                    <td>15 000 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Группа до 10 человек. Русская баня с бассейном.</td>
+                                    <td>сеанс (2 часа)</td>
+                                    <td>7 500 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Группа до 10 человек. Русская баня с бассейном с использованием мангала.</td>
+                                    <td>сеанс (4 часа)</td>
+                                    <td>20 000 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Группа до 20 человек. Русская баня с бассейном.</td>
+                                    <td>сеанс (4 часа)</td>
+                                    <td>30 000 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Группа до 20 человек. Русская баня с бассейном с использованием мангала.</td>
+                                    <td>сеанс (4 часа)</td>
+                                    <td>35 000 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Использование каминного зала (без бани и бассейна) при условии заказа питания в ресторане "Ватутинки" .</td>
+                                    <td>до 8 часов</td>
+                                    <td>15 000 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Использование каминного зала (без бани и бассейна) без заказа питания в ресторане "Ватутинки" .</td>
+                                    <td>до 8 часов</td>
+                                    <td>20 000 ₽</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class='bath-view'>
+                <div class='swiper-container'>
+                    <div class='swiper-wrapper'>
+                        <div class='swiper-slide'>
+                            <img src="img/bath3.webp" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="img/bath3.webp" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="bath-view__nav">
+                    <div class='swiper-button-prev'>
+                        <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 14L17 0L9.87906 14L17 28L0 14Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="bath-view__scroll">
+                        <div class='swiper-scrollbar'></div>
+                    </div>
+                    <div class='swiper-button-next'>
+                        <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 14L0 0L7.12094 14L0 28L17 14Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class="consult__title display2">Свяжитесь с нами:</div>
+                    <form class='consult__form'>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="Ваше имя" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='tel' placeholder="Ваш телефон" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='email' placeholder="E-mail" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="С" class="date-field" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="До" class="date-field" />
+                        </fieldset>
+                        <button class="consult__btn arrow-btn">
+                            <span>Забронировать</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

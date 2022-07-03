@@ -1,0 +1,237 @@
+@import "../vars.scss";
+.contacts {
+    padding-bottom: 75px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 38%;
+    }
+    &__right {
+        width: 57.4%;
+        flex-shrink: 0;
+        padding-top: 90px;
+    }
+    &__img {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 30px;
+            right: 30px;
+            background-color: $white;
+        }
+        img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            display: block;
+        }
+    }
+    &__desc {
+        width: 300px;
+        max-width: 100%;
+        margin: 66px 0 0 auto;
+        font-size: 18px;
+        p {
+            font-size: inherit;
+        }
+    }
+}
+
+.your-way {
+    padding: 105px 0;
+    &__inner {
+        margin: 110px auto 0;
+        width: 970px;
+        max-width: 100%;
+    }
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 116px;
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        width: 74px;
+        height: 74px;
+        background: #C4C4C4;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-right: 28px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__subtitle {
+        max-width: 275px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 118%;
+    }
+    &__desc {
+        margin-top: 45px;
+        padding: 0 33px;
+        font-size: 18px;
+        p {
+            font-size: inherit;
+        }
+    }
+}
+
+.location {
+    color: $dark;
+    background-color: $white;
+    position: relative;
+    &__map {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 55%;
+        height: 100%;
+    }
+    .ymaps-2-1-79-map {
+        filter: grayscale(1);
+        -ms-filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+    }
+    &__info {
+        width: 45%;
+        margin-left: auto;
+        padding: 65px;
+    }
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+    &__address {
+        width: 324px;
+        max-width: 100%;
+        margin-left: auto;
+        font-size: 18px;
+        line-height: 117%;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+        &-img {
+            height: 62px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: center top;
+            mix-blend-mode: luminosity;
+        }
+        &-title {
+            margin-top: 12px;
+            font-size: 9px;
+            line-height: 11px;
+            text-align: center;
+        }
+    }
+    &__subtitle {
+        width: 360px;
+        max-width: 100%;
+        display: block;
+        margin: 25px 0 0 auto;
+        font-size: 28px;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacts {
+        padding-bottom: 30px;
+        &__inner {
+            display: block;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 30px;
+            padding: 0;
+        }
+        &__desc {
+            width: 100%;
+            margin: 20px 0 0;
+        }
+        &__img {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .your-way {
+        padding: 30px 0;
+        &__inner {
+            margin-top: 40px;
+        }
+        &__group {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+        &__subtitle {
+            font-size: 22px;
+        }
+        &__desc {
+            margin-top: 15px;
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+    .location {
+        &__map {
+            position: static;
+            height: 500px;
+            width: 100%;
+        }
+        &__info {
+            width: 100%;
+            padding: 30px 0;
+        }
+        &__group {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__title {
+            margin-bottom: 15px;
+        }
+        &__address {
+            width: 100%;
+            max-width: 100%;
+        }
+        &__items {
+            justify-content: unset;
+        }
+        &__subtitle {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"МЕД и СПА", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='med'>
+                <div class='container'>
+                    <div class='med__inner'>
+                        <div class="med__left">
+                            <h1 class="med__title display2">МЕД и СПА</h1>
+                            <div class="med__desc">Спа и медицинский центры оздоровительного комплекса «Ватутинки» являются визитной карточкой команды. Именно здесь наши гости имеют возможность уделить внимание себе, своему здоровью и полноценному отдыху. Разнообразный спектр
+                                услуг включает в себя множество направлений по уходу за лицом и телом, поддержанию здоровья и релаксу. </div>
+                        </div>
+                        <div class="med__right">
+                            <div class="med__img">
+                                <img src="img/med.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class='offer__items'>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog5","title":"Физиотерапия","desc":"Магнитотерапия, ультразвуковая терапия, микроволновая терапия, УВЧ терапия, амплипульс терапия, ингаляции, электрофорез, прессотерапия. "})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog6","title":"Водолечение","desc":"Подводный душ-массаж, гидромассажная ванна, вихревая ванна для рук и для ног"})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog7","title":"Процедурный кабинет","desc":"Внутримышечная инъекция, внутривенная инъекция, внутривенная капельная инфузия, внутривенное капельное вливание, лечебные повязки, измерение сахара крови с помощью глюкометра. Манипуляции проводятся только по направлению врача. "})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog8","title":"Коллагенарий","desc":"Главные эффекты от посещения коллагенария – это омоложение и регенерация кожи, повышение тонуса кожи, разглаживанию морщин, устранение гиперпигментации (веснушки, старческие пятна) и рассасывание сосудистых звездочек."})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='massage'>
+                <div class="massage__content">
+                    <div class='container'>
+                        <div class='massage__inner'>
+                            <div class="massage__info">
+                                <div class="massage__title">Массаж</div>
+                                <div class="massage__desc">Общий массаж, общий детский массаж, а также массаж для отдельных частей тела (спины, воротниковой зоны, верхних конечностей, нижних конечностей и поясницы), стоун-терапия.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/massage.webp" alt="" class="massage__img">
+            </section>
+
+            <section class='rf-lift'>
+                <div class='container'>
+                    <a href="" class="offer-card">
+                        @@include('components/cards/_offer-card.html',{"img":"catalog9","title":"RF - Лифтинг","desc":"Процедура комплексного омоложения кожи с эффектом лифтинга, предполагающая воздействие на проблемные зоны радиоволновым излучением. Выполнять процедуры RF-лифтинга можно на различных участках лица и тела. Немедленный косметический эффект омоложения заметен уже после первых процедур."})
+                    </a>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class="consult__title display2">ЗАПИСАТЬСЯ на <br> услугу</div>
+                    <form class='consult__form'>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="Имя" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='tel' placeholder="Телефон" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='email' placeholder="E-mail" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='text' class="date-field" placeholder="Дата" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="Услуга" />
+                        </fieldset>
+                        <button class="consult__btn arrow-btn">
+                            <span>Записаться</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

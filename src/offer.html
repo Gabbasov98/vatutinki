@@ -1,0 +1,63 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"СПЕЦПРЕДЛОЖЕНИЯ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='offer'>
+                <div class='container'>
+                    <div class="offer__title display2">СПЕЦПРЕДЛОЖЕНИЯ</div>
+                    <div class='offer__items'>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog","title":"Молодоженам","desc":"При заказе банкета, скидка 20% на проживание в номере любой категории для молодоженов."})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog2","title":"&#34;Золотой возраст&#34;","desc":"Мы заботимся о гостях пенсионного возраста и предоставляем скидку 10% на проживание и услуги по тарифу Базовый."})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog3","title":"День рождения","desc":"Предоставляется 10% скидка на проживание по путевке. "})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog4","title":"Русская баня","desc":"Всем отдыхающим дарим СКИДКУ 30% на посещение русской бани с бассейном. "})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class="consult__title display2">Узнавать об акциях первым:</div>
+                    <form class='consult__form consult__form--contacts'>
+                        <fieldset class='mfg consult__full13'>
+                            <input type='text' placeholder="Имя" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='email' placeholder="E-mail" />
+                        </fieldset>
+                        <button class="consult__btn arrow-btn">
+                            <span>Подписаться</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

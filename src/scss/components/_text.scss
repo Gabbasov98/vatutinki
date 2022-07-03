@@ -1,0 +1,61 @@
+@import "../vars";
+.display2 {
+    font-size: 48px;
+    line-height: 121%;
+    font-family: $font2;
+    span {
+        font-family: "Arial", sans-serif;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 125%;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    strong {
+        font-weight: 700;
+    }
+}
+
+ul {
+    li {
+        position: relative;
+        padding-left: 22px;
+        font-size: 18px;
+        line-height: 22px;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 14px;
+            height: 14px;
+            background-image: url(../img/star.svg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .display2 {
+        font-size: 36px;
+    }
+    p {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .display2 {
+        font-size: 28px;
+        word-wrap: break-word;
+    }
+}

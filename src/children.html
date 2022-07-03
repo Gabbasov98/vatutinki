@@ -1,0 +1,40 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"ОТДЫХ С ДЕТЬМИ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='offer'>
+                <div class='container'>
+                    <div class="offer__title display2">ОТДЫХ С ДЕТЬМИ</div>
+                    <div class='offer__items'>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog10","title":"Анимация","desc":"Дети будут в восторге от анимационных программ, которые реализуются командой профессиональных аниматоров"})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog11","title":"Игровая комната","desc":"В детской комнате много игрушек, установлена детская мебель, а помещение выполнено в светлых тонах"})
+                        </a>
+                        <a href="" class="offer-card">
+                            @@include('components/cards/_offer-card.html',{"img":"catalog12","title":"Уличные площадки","desc":"Кроме детской комнаты, на территории для маленьких гостей есть еще одно отличное место – детская площадка"})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

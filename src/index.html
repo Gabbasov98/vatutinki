@@ -1,0 +1,190 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='main'>
+                <div class='container'>
+                    <div class='main__inner'>
+                        <form class="main__form">
+                            <fieldset class='mfg'>
+                                <select>
+                                    <option selected>Главный корпус</option>
+                                    <option>Главный корпус2</option>
+                                    <option>Главный корпус3</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class='mfg'>
+                                <select>
+                                    <option>Один гость</option>
+                                    <option selected>Два гостя</option>
+                                    <option>Три гостя</option>
+                               </select>
+                            </fieldset>
+                            <div class="main__dates">
+                                <span class="main__dates-title">с</span>
+                                <fieldset class='mfg'>
+                                    <input type='text' class="date-field" />
+                                </fieldset>
+                                <span class="main__dates-title">по</span>
+                                <fieldset class='mfg'>
+                                    <input type='text' class="date-field" />
+                                </fieldset>
+                            </div>
+                            <button class="main__btn arrow-btn">
+                                <span>Подобрать номер</span>
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class='about-index'>
+                <div class='container'>
+                    <div class='about-index__inner'>
+                        <div class="about-index__left">
+                            <div class="about-index__title display2">Об отеле</div>
+                            <div class="about-index__desc">
+                                <p>Вас приветствует команда оздоровительного комплекса «Ватутинки»!</p>
+                                <p>Более 40 лет оздоровительный комплекс «Ватутинки», принимая гостей, предоставляет не только высококлассный сервис, но и массу дополнительных возможностей: активный отдых, оздоровление и релаксацию, хорошее настроение и
+                                    неповторимый комфорт.</p>
+                                <p>Мы очень надеемся, что, побывав у нас однажды, вы по достоинству оцените качество оказанных услуг и посетите наш комплекс снова! Ведь, именно новая встреча с гостями является для нас наивысшей наградой и признанием!</p>
+                                <p>С энтузиазмом и любовью к своему делу, мы создаём атмосферу тепла и комфорта, которую неизменно сможете ощутить вы и ваши близкие.</p>
+                                <p>Добро пожаловать в оздоровительный комплекс «Ватутинки»! </p>
+                            </div>
+                        </div>
+                        <div class="about-index__right">
+                            <div class="about-index__img">
+                                <img src="img/about.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-index__items">
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about2.webp);"></div>
+                            <div class="about-index__item-title">Номера и котеджи</div>
+                        </a>
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about3.webp);"></div>
+                            <div class="about-index__item-title">Рестораны</div>
+                        </a>
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about4.webp);"></div>
+                            <div class="about-index__item-title">МЕД и СПА</div>
+                        </a>
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about5.webp);"></div>
+                            <div class="about-index__item-title">Развлечения и спорт</div>
+                        </a>
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about6.webp);"></div>
+                            <div class="about-index__item-title">Бизнесу</div>
+                        </a>
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about7.webp);"></div>
+                            <div class="about-index__item-title">Контакты</div>
+                        </a>
+                        <a href="" class="about-index__item">
+                            <div class="about-index__item-img" style="background-image: url(img/about7.webp);"></div>
+                            <div class="about-index__item-title">Контакты</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='hotel-index'>
+                <div class='container'>
+                    <div class='hotel-index__inner'>
+                        <div class="hotel-index__logo">В</div>
+                        <div class="hotel-index__links">
+                            <a href="" class="hotel-index__link">
+                                <span>Номера Главный корпус</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                            <a href="" class="hotel-index__link">
+                                <span>Спецпредложения</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                            <a href="" class="hotel-index__link">
+                                <span>Семейный отдых</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                            <a href="" class="hotel-index__link">
+                                <span>Банная усадьба «ИВУШКА»</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                            <a href="" class="hotel-index__link">
+                                <span>Развлечения</span>
+                                <img src="img/arrow-right.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="hotel-index__img">
+                            <img src="img/hotel.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='sale-index'>
+                <div class='container'>
+                    <div class='sale-index__title display2'>Акции:</div>
+                </div>
+
+                <div class="sale-index__wrap">
+                    <div class="container">
+                        <div class="sale-index__inner">
+                            <div class="sale-index__info">
+                                <div class="sale-index__desc">
+                                    <p>Свадьба - одно из самых важных событий в жизни каждого человека, каждой семьи.</p>
+                                    <p>Поэтому, в качестве подарка от нашего отеля, мы даем скидку 20% всем молодоженам.</p>
+                                </div>
+                                <div class="sale-index__percent">20%</div>
+                                <div class="sale-index__subtitle">скидка молодоженам
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class="consult__title display2">Свяжитесь с нами:</div>
+                    <form class='consult__form'>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="Ваше имя" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='tel' placeholder="Ваш телефон" />
+                        </fieldset>
+                        <button class="consult__btn arrow-btn">
+                            <span>Жду звонка</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

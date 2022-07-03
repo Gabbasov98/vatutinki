@@ -1,0 +1,19 @@
+@import "../vars.scss";
+.offer {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 17px));
+        gap: 48px 34px;
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offer {
+        &__items {
+            grid-template-columns: 100%;
+            gap: 25px;
+            margin-top: 40px;
+        }
+    }
+}

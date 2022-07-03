@@ -1,0 +1,53 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"ЗОЛОТОЙ ВОЗРАСТ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='space'>
+                <div class='container'>
+                    <div class="space__title display2">ЗОЛОТОЙ ВОЗРАСТ</div>
+                    <div class='space__inner'>
+                        <div class="space__left space__left--51">
+                            <div class="space__img">
+                                <img src="img/offer4.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="space__right space__right--46">
+                            <div class="space__desc">
+                                <p>Мы заботимся о гостях пенсионного возраста и предоставляем скидку 10% на проживание и услуги по тарифу Базовый*</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sale-condition">
+                        <div class="space__subtitle space__subtitle--mb48">Условия акции:</div>
+                        <div class="space__desc sale-condition__desc">
+                            <p>*При предъявлении пенсионного удостоверения или соответствующего документа.</p>
+                            <p>- Не суммируется с другими акциями и специальными предложениями. - Акция не распространяется на фиксированные и праздничные заезды.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                @@include('components/page-blocks/_consult2.html',{"title":"Воспользоваться спецпредложением:","btn":"Отправить"})
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

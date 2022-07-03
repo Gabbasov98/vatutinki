@@ -1,0 +1,68 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"ДЕНЬ РОЖДЕНИЯ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='space'>
+                <div class='container'>
+                    <div class="space__title display2">ДЕНЬ РОЖДЕНИЯ</div>
+                    <div class="space__subtitle space__subtitle--mt38">Предоставляется 10% скидка на проживание по путевке.</div>
+                    <div class='space__inner'>
+                        <div class="space__left space__left--51">
+                            <div class="space__img">
+                                <img src="img/offer.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="space__right space__right--46">
+                            <div class="space__subtitle space__subtitle--mb48">В стоимость проживания включено:</div>
+                            <div class="space__desc">
+                                <p>- размещение в номере выбранной категории</p>
+                                <p>- питание завтрак по системе шведский стол/ полный пансион (в зависимости от выбранного тарифного плана)</p>
+                                <p>- посещение бассейна, саун, тренажерного зала</p>
+                                <p>- посещение детской комнаты</p>
+                                <p>- автостоянка</p>
+                                <p>- сладкий комплимент имениннику в День Рождения (при условии, что День Рождения приходится на даты заезда и подтверждается паспортными данными)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sale-condition">
+                        <div class="space__subtitle space__subtitle--mb48">Условия акции:</div>
+                        <div class="space__desc sale-condition__desc">
+                            <p>- Акция распространяется на 2 суток</p>
+                            <p>- Предложение (скидка) действует в течение 7 дней до и после дня рождения</p>
+                            <p>- Акция предоставляется только на номер именинника</p>
+                            <p>- Акция предоставляется при предъявлении копии паспорта</p>
+                            <p>- Не суммируется с другими акциями и специальными предложениями</p>
+                            <p>- Только для отдыха индивидуальных гостей</p>
+                            <p>- Акция не распространяется на фиксированные и праздничные заезды</p>
+                            <p>
+                                <strong>*НДС не облагается</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                @@include('components/page-blocks/_consult2.html',{"title":"Воспользоваться спецпредложением:","btn":"Отправить"})
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

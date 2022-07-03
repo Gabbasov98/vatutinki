@@ -1,0 +1,51 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"ТРЕНИНГ-КОМНАТА", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='space'>
+                <div class='container'>
+                    <div class="space__title display2">ТРЕНИНГ-КОМНАТА</div>
+                    <div class='space__inner'>
+                        <div class="space__left">
+                            <div class="space__img">
+                                <img src="img/space2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="space__right">
+                            <div class="space__desc">
+                                <p>Вместимость – 70 человек</p>
+                                <p>Площадь зала – 94 м²</p>
+                                <p>Комфортная мебель</p>
+                                <p>Настенный экран</p>
+                                <p>Формат мероприятий: совещания, деловые встречи, переговоры, пресс-конференции, брифинги</p>
+                                <p>Рассадка – театр, круглый стол, класс</p>
+                                <p>Расположение – Главный корпус</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                @@include('components/page-blocks/_consult.html',{"title":"ЗАБРОНИРОВАТЬ:"})
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

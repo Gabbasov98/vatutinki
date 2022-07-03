@@ -1,0 +1,137 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        <header class='header'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='contacts'>
+                <div class='container'>
+                    <div class='contacts__inner'>
+                        <div class="contacts__left">
+                            <div class="contacts__title display2">Контакты</div>
+                            <div class="contacts__desc">
+                                <p>Оздоровительный комплекс «Ватутинки» расположен в заповедной зоне Подмосковья, всего в 14 км от МКАД, в районе Новой Москвы.</p>
+                                <p>В 35 км от комплекса находится Кремль. Расстояние до международного аэропорта Внуково составляет 12 км.</p>
+                            </div>
+                        </div>
+                        <div class="contacts__right">
+                            <div class="contacts__img">
+                                <img src="img/contacts.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='your-way'>
+                <div class='container'>
+                    <div class="your-way__title display2">Как добраться:</div>
+                    <div class='your-way__inner'>
+                        <div class="your-way__group">
+                            <div class="your-way__top">
+                                <div class="your-way__icon">
+                                    <img src="img/advantage6.svg" alt="">
+                                </div>
+                                <div class="your-way__subtitle">На общественном транстпорте:</div>
+                            </div>
+                            <div class="your-way__desc">
+                                <p>• От станции метро <strong>«Теплый Стан» на автобусе № 531</strong> в сторону области по Калужскому шоссе до остановки «34 км», затем пешком 10-12 мин в направлении мкр. <strong>Новые Ватутинки до указателя «ОК «Ватутинки»</strong>                                    .</p>
+                                <p>• От станции метро <strong>«Теплый Стан» на автобусе № 991</strong> , <strong>от 2-го мкр. Южное Бутово на автобусе № 117</strong> в сторону области по Калужскому шоссе до остановки «Нововатутинский проспект», затем 5-7
+                                    мин пешком до указателя «ОК «Ватутинки».</p>
+                                <p>• От станции метро <strong>«Теплый Стан» на маршрутном такси № 522</strong> до главного контрольно-пропускного пункта «ОК «Ватутинки».</p>
+                            </div>
+                        </div>
+                        <div class="your-way__group">
+                            <div class="your-way__top">
+                                <div class="your-way__icon">
+                                    <img src="img/advantage7.svg" alt="">
+                                </div>
+                                <div class="your-way__subtitle">На личном автомобиле:</div>
+                            </div>
+                            <div class="your-way__desc">
+                                <p>От Москвы 15 км по Калужскому шоссе до поворота на светофоре в сторону мкр. Новые Ватутинки, затем двигаться 1 км до указателя «ОК «Ватутинки».</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='location'>
+                <div class="location__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc37c7f2117793067baeed12de425381a6b8da368b1d0407af105e38b804ec41&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class='container'>
+                    <div class="location__info">
+                        <div class="location__group">
+                            <div class="location__title display2">Адрес:</div>
+                            <div class="location__address">Россия, г. Москва, поселение Десеновское, ул. Чароитовая, владение 5, строение 1, 2.</div>
+                        </div>
+                        <div class="location__group">
+                            <div class="location__title display2">ПРОЛОЖИТЬ МАРШРУТ:</div>
+                            <div class="location__items">
+                                <div class="location__item">
+                                    <div class="location__item-img" style="background-image: url(img/pin.svg);"></div>
+                                    <div class="location__item-title">Яндекс.Навигатор</div>
+                                </div>
+                                <div class="location__item">
+                                    <div class="location__item-img" style="background-image: url(img/pin2.svg);"></div>
+                                    <div class="location__item-title">Google maps</div>
+                                </div>
+                                <div class="location__item">
+                                    <div class="location__item-img" style="background-image: url(img/pin4.svg);"></div>
+                                    <div class="location__item-title">Яндекс.Карты</div>
+                                </div>
+                            </div>
+                            <div class="location__subtitle">55.513851, 37.335223</div>
+                        </div>
+                        <div class="location__group">
+                            <div class="location__title display2">ПОЗВОНИТЬ:</div>
+                            <a href="" class="location__subtitle">8 (495) 276-88-08</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class="consult__title display2">Написать директору:</div>
+                    <form class='consult__form consult__form--contacts'>
+                        <fieldset class='mfg consult__full15'>
+                            <textarea placeholder="Текст вашего обращения"></textarea>
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='tel' placeholder="Ваш телефон" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='text' placeholder="ФИО" />
+                        </fieldset>
+                        <fieldset class='mfg'>
+                            <input type='email' placeholder="E-mail" />
+                        </fieldset>
+                        <button class="consult__btn arrow-btn">
+                            <span>Отправить</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
