@@ -91,12 +91,22 @@
     overflow-y: auto;
     &__grid {
         display: grid;
-        grid-template-columns: 300px 300px;
-        gap: 40px 30px;
+        grid-template-columns: auto auto auto;
+        gap: 60px 30px;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 120%;
+        font-weight: 700;
+        margin-bottom: 15px;
     }
     &__link {
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 500;
+        display: block;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -105,7 +115,7 @@
         padding-top: 140px;
         &__grid {
             grid-template-columns: 100%;
-            gap: 20px;
+            gap: 50px;
         }
     }
 }
