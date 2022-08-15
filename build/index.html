@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
 
-        <header class='header'>
+        <header class='header header--index'>
             <div class='container'>
     <div class='header__inner'>
         <button class="header__burger">
@@ -75,40 +75,67 @@
         <main class="content">
 
             <section class='main'>
-                <div class='container'>
-                    <div class='main__inner'>
-                        <form class="main__form">
-                            <fieldset class='mfg'>
-                                <select>
-                                    <option selected>Главный корпус</option>
-                                    <option>Главный корпус2</option>
-                                    <option>Главный корпус3</option>
-                                </select>
-                            </fieldset>
-                            <fieldset class='mfg'>
-                                <select>
-                                    <option>Один гость</option>
-                                    <option selected>Два гостя</option>
-                                    <option>Три гостя</option>
-                               </select>
-                            </fieldset>
-                            <div class="main__dates">
-                                <span class="main__dates-title">с</span>
-                                <fieldset class='mfg'>
-                                    <input type='text' class="date-field" />
-                                </fieldset>
-                                <span class="main__dates-title">по</span>
-                                <fieldset class='mfg'>
-                                    <input type='text' class="date-field" />
-                                </fieldset>
+                <div class="main__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/street-bg.jpg" alt="">
                             </div>
-                            <button class="main__btn arrow-btn">
-                                <span>Подобрать номер</span>
-                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"/>
-                                </svg>
-                            </button>
-                        </form>
+                            <div class="swiper-slide">
+                                <img src="img/street-bg2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/street-bg3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/street-bg4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/street-bg5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__nav">
+                        <div class="main__current">01</div>
+                        <div class="swiper-scrollbar swiper-scrollbar-vertical"></div>
+                        <div class="main__all"></div>
+                    </div>
+                </div>
+                <img src="img/logo.png" alt="" class="main__logo">
+                <div class="main__wrap">
+                    <div class='container'>
+                        <form class="main__form">
+                                <fieldset class='mfg'>
+                                    <select>
+                                        <option selected>Главный корпус</option>
+                                        <option>Главный корпус2</option>
+                                        <option>Главный корпус3</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset class='mfg'>
+                                    <select>
+                                        <option>Один гость</option>
+                                        <option selected>Два гостя</option>
+                                        <option>Три гостя</option>
+                                   </select>
+                                </fieldset>
+                                <div class="main__dates">
+                                    <span class="main__dates-title">с</span>
+                                    <fieldset class='mfg'>
+                                        <input type='text' class="date-field" />
+                                    </fieldset>
+                                    <span class="main__dates-title">по</span>
+                                    <fieldset class='mfg'>
+                                        <input type='text' class="date-field" />
+                                    </fieldset>
+                                </div>
+                                <button class="main__btn arrow-btn">
+                                    <span>Подобрать номер</span>
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 7L-6.52532e-07 13.9282L-4.68497e-08 0.0717959L12 7Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </form>
                     </div>
                 </div>
             </section>
@@ -172,7 +199,7 @@
                         <div class="hotel-index__logo">В</div>
                         <div class="hotel-index__links">
                             <a href="" class="hotel-index__link">
-                                <span>Номера Главный корпус</span>
+                                <span>Проживание</span>
                                 <img src="img/arrow-right.svg" alt="">
                             </a>
                             <a href="" class="hotel-index__link">

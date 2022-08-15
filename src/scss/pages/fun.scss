@@ -3,7 +3,7 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 80px 20px;
+        gap: 45px 20px;
         margin-top: 90px;
     }
     &__item {
@@ -181,8 +181,8 @@
 }
 
 .pool-rules {
-    margin-top: 124px;
-    padding: 122px 0;
+    margin-top: 30px;
+    padding: 100px 0;
     background-size: cover;
     background-position: center;
     background-image: url(../img/rules.jpg);
@@ -232,28 +232,44 @@
 .gym {
     padding: 90px 0;
     &__img {
-        margin-top: 140px;
+        margin-top: 40px;
         display: block;
         width: 100%;
     }
 }
 
 .gym-prices {
-    margin-top: 105px;
+    margin-top: 40px;
 }
 
 .billiard,
-.tennis {
+.tennis{
     padding: 60px 0;
     margin-top: 100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 992px){
+        height: 100vh;
+    }
     &--ping {
         margin-top: 0 !important;
+    }
+    &__wrap{
+        flex-grow: 1;
+        position: relative;
+        overflow: hidden;
+        @media screen and (min-width: 992px){
+            height: 300px;
+        }
     }
     &__img {
         margin-top: 55px;
         display: block;
         width: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        height: 100%;
     }
     &__info {
         position: absolute;
@@ -269,6 +285,9 @@
         font-size: 18px;
         line-height: 120%;
     }
+    .gym-prices{
+        flex-shrink: 0;
+    }
 }
 
 .sport-hall {
@@ -278,7 +297,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        margin-top: 160px;
+        margin-top: 60px;
     }
     &__desc {
         font-size: 18px;
@@ -294,6 +313,7 @@
         img {
             display: block;
             width: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -316,6 +336,23 @@
         width: 100%;
         display: block;
         margin-top: 100px;
+    }
+    &__wrap{
+        position: relative;
+    }
+    &__info {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 132px;
+    }
+    &__desc {
+        background-color: $dark;
+        padding: 50px 25px 75px;
+        width: 470px;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 120%;
     }
 }
 
@@ -446,6 +483,7 @@
             margin: 40px 0 0;
         }
     }
+
     .billiard {
         padding: 30px 0;
         &__info {
@@ -457,6 +495,12 @@
         }
         &__desc {
             min-height: unset;
+        }
+    }
+
+    .rent {
+        &__info {
+            bottom: 40px;
         }
     }
 }
@@ -487,6 +531,7 @@
             }
         }
     }
+
     .pool {
         &__subtitle {
             font-size: 22px;
@@ -506,6 +551,7 @@
             }
         }
     }
+
     .pool-time {
         &__item {
             font-size: 18px;
@@ -522,6 +568,7 @@
             padding-left: 30px;
         }
     }
+
     .pool-rules {
         background-image: unset;
         padding: 30px 0;
@@ -530,8 +577,10 @@
             padding: 0;
         }
     }
+
     .billiard,
-    .tennis {
+    .tennis ,
+    .rent{
         &__info {
             position: static;
         }

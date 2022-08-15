@@ -1,4 +1,4 @@
-@import "vars";
+@import "../vars";
 .header {
     position: absolute;
     width: 100%;
@@ -6,6 +6,12 @@
     top: 0;
     padding: 27px 0;
     z-index: 10;
+    &--index{
+        .header__logo{
+            pointer-events: none;
+            opacity: 0;
+        }
+    }
     &__inner {
         display: flex;
         align-items: center;

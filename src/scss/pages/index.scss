@@ -1,27 +1,87 @@
 @import "../vars.scss";
 @import "../mixins";
 .main {
-    background-image: url(../img/main-bg.jpg);
+    //background-image: url(../img/main-bg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
     margin-top: -190px;
+    &__slider{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        .swiper{
+            &-container{
+                height: 100%;
+            }
+            &-wrapper{
+                align-items: stretch;
+            }
+            &-slide{
+                height: auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-scrollbar{
+                margin: 10px 0;
+                width: 3px;
+                height: 360px;
+                background: #D8D8D6;
+                &-drag{
+                    cursor: pointer;
+                    width: 18px;
+                    left: -7.5px;
+                    background-color: transparent;
+                    background-image: url(../img/dragger.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        right: 120px;
+        transform: translateY(-50%);
+        font-weight: 600;
+        font-size: 26px;
+        color: #FFFFFF;
+        font-family: $font2;
+    }
     &:before {
         content: '';
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         width: 100%;
         height: 100%;
         background: #000;
-        opacity: 0.3;
+        opacity: 0.5;
     }
-    &__inner {
-        padding: 140px 0 40px;
-        height: 100vh;
-        position: relative;
+    &__wrap{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         z-index: 2;
-        display: flex;
-        flex-direction: column;
+        padding: 40px 0;
+    }
+    &__logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        width: 700px;
+        max-width: 100%;
+        display: block;
     }
     &__form {
         margin: auto auto 0;
@@ -92,7 +152,7 @@
         }
     }
     &__items {
-        margin-top: 70px;
+        margin-top: 120px;
         display: flex;
         padding-bottom: 20px;
         overflow-x: auto;
@@ -192,7 +252,11 @@
 }
 
 .sale-index {
-    padding: 45px 0 0;
+    padding: 45px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &__title {
         padding-left: 80px;
     }
@@ -237,6 +301,12 @@
 
 .consult {
     padding: 200px 0 45px;
+    &--small{
+        padding-top: 55px;
+        .consult__form{
+            margin-top: 40px;
+        }
+    }
     &__title {
         max-width: 740px;
     }
@@ -263,6 +333,15 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .main{
+        &__logo{
+            width: 400px;
+        }
+        &__nav{
+            right: 30px;
+        }
+    }
+
     .hotel-index {
         &__inner {
             padding-left: 300px;
@@ -319,6 +398,7 @@
             margin: 30px auto 0;
         }
     }
+
     .about-index {
         padding: 30px 0;
         &__inner {
@@ -343,6 +423,7 @@
             margin: 40px 0 0 -20px;
         }
     }
+
     .hotel-index {
         &__inner {
             padding-left: 0;
@@ -360,6 +441,7 @@
             display: none;
         }
     }
+
     .consult {
         padding: 90px 0 30px;
         &__form {
@@ -375,6 +457,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main{
+        &__nav{
+            display: none;
+        }
+    }
+
     .hotel-index {
         &__inner {
             display: block;
@@ -388,6 +476,7 @@
             margin: 30px 0 0 -20px;
         }
     }
+
     .sale-index {
         padding: 30px 0 0;
         &__title {

@@ -39,7 +39,7 @@
         margin-top: 70px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 120px 40px;
+        gap: 40px;
         padding: 0 40px;
     }
     &__item {
@@ -65,7 +65,7 @@
         }
         &-desc,
         &-length {
-            margin-top: 18px;
+            margin-top: 10px;
             font-size: 18px;
             line-height: 125%;
         }
@@ -73,7 +73,7 @@
             font-weight: 700;
         }
         &-link {
-            margin: 44px 0 0 -30px;
+            margin: 20px 0 0 -30px;
             width: 130px;
         }
     }
@@ -81,6 +81,7 @@
 
 .conf-img {
     margin-top: 40px;
+    position: relative;
     img {
         width: 100%;
         display: block;
