@@ -76,10 +76,10 @@
     &__logo{
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 48%;
         transform: translate(-50%,-50%);
         z-index: 2;
-        width: 700px;
+        width: 500px;
         max-width: 100%;
         display: block;
     }
@@ -460,6 +460,12 @@
     .main{
         &__nav{
             display: none;
+        }
+        &__logo{
+            width: 200px;
+            top: unset;
+            bottom: 300px;
+            transform: translate(-50%,0);
         }
     }
 
